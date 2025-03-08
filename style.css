@@ -88,25 +88,6 @@ section {
     margin: 0 auto;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-}
 /* Footer Section */
 footer {
     background: #387ca4; /* Same color as navigation bar */
