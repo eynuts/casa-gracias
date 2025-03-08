@@ -1,0 +1,497 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: #387ca4;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #387ca4;
+    color: #387ca4;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hotel-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Reservation Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background: #ffcc00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        text-align: center;
+        background: #387ca4;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+/* Improve Button Styles */
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Improve Hero Section */
+.hero {
+    background: url('hotel.jpg') center/cover no-repeat; /* Change this to your image */
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Improve Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Improve Form Inputs */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+/* Improve Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+/* Footer Styling */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+/* Navigation Bar Styling */
+nav {
+    background: #387ca4; /* Dark background */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+body {
+    background: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text for visibility */
+}
+/* Swiper Styles */
+.swiper-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ffcc00;
+}
+
+/* Swiper Pagination Dots */
+.swiper-pagination-bullet {
+    background: #ffcc00;
+}
+#rooms .swiper-button-next,
+#rooms .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #000; /* Change arrow color if needed */
+}
+
+#rooms {
+    position: relative;
+}
+/* Rooms Section */
+#rooms {
+    padding: 50px 20px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+#rooms h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#rooms p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Room Details */
+.room-details {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.room-details h3 {
+    font-size: 1.5em;
+    color: #387ca4;
+    margin-bottom: 5px;
+}
+
+.room-details p {
+    font-size: 1em;
+    color: #387ca4;
+    margin: 5px 0;
+}
+
+/* Swiper Image Styling */
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 90%;
+    max-height: 250px;
+    border-radius: 10px;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto !important; /* Allow the slide to expand dynamically */
+}
+
+.room-details {
+    width: 90%; /* Keep it aligned with the image */
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 10px;
+    flex-grow: 1; /* Allow it to take up available space */
+}
+
+.swiper-container {
+    overflow: visible !important; /* Prevent content from being cut off */
+}
+.book-now {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #387ca4;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.book-now:hover {
+    background: #387ca4;
+    transform: scale(1.05);
+}

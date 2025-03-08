@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Gracias Hotel</title>
+    <link rel="stylesheet" href="style.css">
+	<!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+<!-- Swiper.js JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+	    <div class="menu-toggle">☰</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Casa Gracias Hotel</h1>
+        <p>Your perfect getaway experience</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <!-- Rooms Section -->
+<!-- Rooms Section -->
+<!-- Rooms Section -->
+<section id="rooms">
+    <h2>Our Rooms</h2>
+    <p>Choose from our variety of comfortable and luxurious rooms designed for your perfect stay.</p>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Deluxe Room -->
+            <div class="swiper-slide">
+                <img src="room1.jpg" alt="Deluxe Room">
+                <div class="room-details">
+                    <h3>Deluxe Room</h3>
+                    <p>Price: $120 per night</p>
+                    <p>Capacity: 2 Adults, 1 Child</p>
+                    <p>Enjoy a spacious room with a king-size bed, modern furnishings, and a beautiful city view.</p>
+                    <a href="#booking" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Standard Room -->
+            <div class="swiper-slide">
+                <img src="room2.jpg" alt="Standard Room">
+                <div class="room-details">
+                    <h3>Standard Room</h3>
+                    <p>Price: $80 per night</p>
+                    <p>Capacity: 2 Adults</p>
+                    <p>A cozy and affordable room with all essential amenities for a comfortable stay.</p>
+                    <a href="#booking" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+			 <!-- Standard Room -->
+            <div class="swiper-slide">
+                <img src="room2.jpg" alt="Standard Room">
+                <div class="room-details">
+                    <h3>Standard Room</h3>
+                    <p>Price: $80 per night</p>
+                    <p>Capacity: 2 Adults</p>
+                    <p>A cozy and affordable room with all essential amenities for a comfortable stay.</p>
+                    <a href="#booking" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+			 <!-- Standard Room -->
+            <div class="swiper-slide">
+                <img src="room2.jpg" alt="Standard Room">
+                <div class="room-details">
+                    <h3>Standard Room</h3>
+                    <p>Price: $80 per night</p>
+                    <p>Capacity: 2 Adults</p>
+                    <p>A cozy and affordable room with all essential amenities for a comfortable stay.</p>
+                    <a href="#booking" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Suite Room -->
+            <div class="swiper-slide">
+                <img src="room3.jpg" alt="Suite Room">
+                <div class="room-details">
+                    <h3>Suite Room</h3>
+                    <p>Price: $200 per night</p>
+                    <p>Capacity: 4 Guests</p>
+                    <p>Luxury at its finest—featuring a private living area, jacuzzi, and breathtaking views.</p>
+                    <a href="#booking" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Experience world-class hospitality.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our story.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today.</p>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+	<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Casa Gracias Hotel. All rights reserved.</p>
+		<p>123 Hotel Street, City, Country | Phone: (123) 456-7890</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </div>
+</footer>
+ <!-- Swiper.js CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+</body>
+</html>
