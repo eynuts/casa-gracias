@@ -522,18 +522,22 @@ form button:hover {
         background: #387ca4; /* Keep the same background */
         width: 100%;
         padding: 10px 0;
-        position: static; /* Remove absolute positioning */
+        position: relative; /* Remove absolute positioning */
+		overflow: hidden
     }
 
     nav ul li {
         margin: 5px 0; /* Reduce spacing for better fit */
+		width: 100%;
+		text-align: center;
     }
 
     nav ul li a {
         display: block;
         padding: 10px 15px;
         font-size: 18px; /* Increase touch target size */
-        width: 100%;
         text-align: center;
-    }
+		color: White;
+		text-decoration: none;
+		}
 }
