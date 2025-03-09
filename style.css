@@ -7,11 +7,15 @@ body {
     background: #f8f8f8;
     color: #333;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 /* Navigation Bar */
 nav {
     background: #387ca4;
-    padding: 15px 0;
+	 height: auto;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -150,33 +154,9 @@ footer a:hover {
 section {
     padding: 50px 20px;
     text-align: center;
+	color: #387ca4;
 }
 
-/* Navigation Bar Styling */
-nav {
-    background: #387ca4; /* Dark background */
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    transition: 0.3s ease;
-}
 
 nav ul li a:hover {
     color: #ffcc00; /* Highlight on hover */
@@ -240,6 +220,7 @@ nav ul li a:hover {
 #rooms h2 {
     font-size: 2em;
     margin-bottom: 10px;
+	color: #387ca4;
 }
 
 #rooms p {
@@ -514,30 +495,71 @@ form button:hover {
     background: #2d6685;
     color: white;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 @media (max-width: 768px) {
     nav ul {
-        display: flex; /* Keep it visible */
-        flex-direction: column; /* Stack menu items vertically */
+        display: none;
+        flex-direction: column;
         align-items: center;
-        background: #387ca4; /* Keep the same background */
+        justify-content: center;
         width: 100%;
-        padding: 10px 0;
-        position: relative; /* Remove absolute positioning */
-		overflow: hidden
+        padding: 5px 0;
     }
+	
+	nav ul.active {
+		display: flex;
+	}
 
     nav ul li {
-        margin: 5px 0; /* Reduce spacing for better fit */
-		width: 100%;
-		text-align: center;
+        margin: 5px 0;
     }
 
     nav ul li a {
-        display: block;
-        padding: 10px 15px;
-        font-size: 18px; /* Increase touch target size */
+        font-size: 16px;
+        padding: 8px 12px;
         text-align: center;
-		color: White;
-		text-decoration: none;
-		}
+    }
+	 .hero {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+	 .menu-toggle {
+        display: block;
+        background: #387ca4;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+	 .swiper-container {
+        width: 100%;
+    }
+
+    .room-details {
+        font-size: 14px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+	.rooms-container {
+  overflow-x: auto; /* Enables scrolling only inside the container */
+  white-space: nowrap; /* Ensures items stay in one line */
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+	
 }
