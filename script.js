@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelector("nav ul");
     const menuToggle = document.createElement("div");
 
-    menuToggle.innerHTML = "☰";
+  
     menuToggle.style.fontSize = "24px";
     menuToggle.style.cursor = "pointer";
     menuToggle.style.display = "none";
