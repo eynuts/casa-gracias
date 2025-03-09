@@ -553,13 +553,5 @@ img {
     .services-container {
         flex-direction: column;
     }
-	.rooms-container {
-  overflow-x: auto; /* Enables scrolling only inside the container */
-  white-space: nowrap; /* Ensures items stay in one line */
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-}
-
 	
 }

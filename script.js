@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: '.swiper-button-prev',
     },
 
-        slidesPerView: 2, // Show 1 slide at a time
+        slidesPerView: 1, // Show 1 slide at a time
         spaceBetween: 20, // Space between slides
     });
 }); // <-- 🔴 CLOSED FOURTH EVENT LISTENER
@@ -89,3 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+});
+
